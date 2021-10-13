@@ -1,13 +1,105 @@
+*{box-sizing: border-box;}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  background-color: #fff;
+  color: #d22;
+  font-family: 'Montserrat', 'sans-serif';
+  text-transform: uppercase;
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid #d22;
+  border-radius: 10px;
+  box-shadow: 0 12px #d33, 0 18px rgba(0,0,0 0.4);
+  font-size: 60px;
+  width: 90px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+}
+
+.disabled .btn {
+  cursor: default;
+}
+
+.disabled .btn:hover {
+  top: 0;
+  background: #fff;
+  color: #d22;
+  box-shadow: 0 12px #d33, 0 18px rgba(0,0,0 0.4);
+}
+
+.btn.disabled {
+  cursor: default;
+}
+
+.btn.disabled:hover  {
+  top: 0;
+  background: #fff;
+  color: #d22;
+  box-shadow: 0 12px #d33, 0 18px rgba(0,0,0 0.4);
+}
+
+.btn:hover {
+  background-color: #d22;
+  color: #44f;
+  top: 4px;
+  box-shadow: 0 8px #d33, 0 14px rgba(0,0,0 0.4);
+}
+
+.btn:active {
+  top: 8px;
+  box-shadow: 0 4px #d33, 0 10px rgba(0,0,0 0.4);
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-info {
+   margin: 15px;
+   color: #fff; 
+}
+
+.board > div {
+  display: flex;
+}
+
+.main-header {
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+
+  margin: 5px;
+}
+
+.titulo {
+  width: 410px;
+  display: inline;
+  text-align: center;
+  font-size:  50px;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  font-family: "Sans-serif"	;
+}
+
+.status {
+  font-family: "Sans-serif";
+  font-size: 30px;
 }
